@@ -3,7 +3,7 @@
 	(generator "eeschema")
 	(generator_version "9.0")
 	(uuid "bcd3afc7-5a13-426d-ae3b-fcf06c733e65")
-	(paper "A4")
+	(paper "A2")
 	(lib_symbols
 		(symbol "EQLightBarLibrary:DEV-15845"
 			(pin_names
@@ -2179,10 +2179,558 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "LED:APA102"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 5.08 5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify right bottom)
+				)
+			)
+			(property "Value" "APA102"
+				(at 1.27 -5.715 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "LED_SMD:LED_RGB_5050-6"
+				(at 1.27 -7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf"
+				(at 2.54 -9.525 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "RGB LED with integrated controller"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "RGB LED addressable 8bit pwm 5bit greyscale"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "LED*RGB*5050*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "APA102_0_0"
+				(text "RGB"
+					(at 2.286 -4.191 0)
+					(effects
+						(font
+							(size 0.762 0.762)
+						)
+					)
+				)
+			)
+			(symbol "APA102_0_1"
+				(polyline
+					(pts
+						(xy 1.27 -2.54) (xy 1.778 -2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -3.556) (xy 1.778 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -1.524) (xy 1.27 -2.54) (xy 1.27 -2.032)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.286 -2.54) (xy 1.27 -3.556) (xy 1.27 -3.048)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 3.683 -1.016) (xy 3.683 -3.556) (xy 3.683 -4.064)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -1.524) (xy 2.667 -1.524) (xy 3.683 -3.556) (xy 4.699 -1.524)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 4.699 -3.556) (xy 2.667 -3.556)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start 5.08 5.08)
+					(end -5.08 -5.08)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+			)
+			(symbol "APA102_1_1"
+				(pin input line
+					(at -7.62 2.54 0)
+					(length 2.54)
+					(name "DI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -7.62 0 0)
+					(length 2.54)
+					(name "CI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 7.62 270)
+					(length 2.54)
+					(name "VCC"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at 0 -7.62 90)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 2.54 180)
+					(length 2.54)
+					(name "DO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 7.62 0 180)
+					(length 2.54)
+					(name "CO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(text "(x61)"
+		(exclude_from_sim no)
+		(at 182.118 104.648 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "54cbf20d-78df-43fa-aef2-34e9ef70532b")
+	)
+	(junction
+		(at 154.94 107.95)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb116737-6dea-4336-b036-e9c3ebc60dbb")
+	)
+	(junction
+		(at 154.94 88.9)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eecee8da-49e1-45af-9ab8-8a589dae1d51")
+	)
+	(no_connect
+		(at 181.61 97.79)
+		(uuid "c6b50c75-28dc-4250-8952-1f0c1361a214")
+	)
+	(no_connect
+		(at 181.61 100.33)
+		(uuid "ccf78614-2104-4dd1-9717-ad45580e41bc")
+	)
+	(wire
+		(pts
+			(xy 73.66 156.21) (xy 73.66 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "095e1b7c-c96d-40d3-8d1a-b2a1a73aff9b")
+	)
+	(wire
+		(pts
+			(xy 69.85 156.21) (xy 73.66 156.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0f645e4d-4ce4-4ff2-9cba-968666fccc00")
+	)
+	(wire
+		(pts
+			(xy 22.86 189.23) (xy 142.24 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "175a8b5e-82fb-49de-b23b-9acd0f2c89d2")
+	)
+	(wire
+		(pts
+			(xy 173.99 88.9) (xy 173.99 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "22024c21-f7d2-448c-8d94-e7ad9a2bd8e9")
+	)
+	(wire
+		(pts
+			(xy 69.85 57.15) (xy 154.94 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b573426-443e-4a47-9c66-e1dde35f82e5")
+	)
+	(wire
+		(pts
+			(xy 166.37 100.33) (xy 162.56 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e3cc62b-f5ac-468f-93a9-6228d0a4f096")
+	)
+	(wire
+		(pts
+			(xy 137.16 107.95) (xy 137.16 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33b64cda-be7f-42a9-8acb-d0791994e056")
+	)
+	(wire
+		(pts
+			(xy 22.86 85.09) (xy 22.86 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33fdd6c5-e098-439b-bd0e-d2bfc40c0ebb")
+	)
+	(wire
+		(pts
+			(xy 25.4 186.69) (xy 25.4 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "38938735-26bf-444d-bfd7-048ca18f61f5")
+	)
+	(wire
+		(pts
+			(xy 154.94 57.15) (xy 154.94 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3f25de45-c561-4cb2-83ec-09e02b3a7f87")
+	)
+	(wire
+		(pts
+			(xy 142.24 100.33) (xy 147.32 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4adaac61-534e-416d-82f6-95837380a347")
+	)
+	(wire
+		(pts
+			(xy 29.21 85.09) (xy 22.86 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5113ca76-9375-4a56-86b2-e3559854b660")
+	)
+	(wire
+		(pts
+			(xy 139.7 97.79) (xy 147.32 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70ddceb1-7362-4ae3-a417-a3fecd2b4043")
+	)
+	(wire
+		(pts
+			(xy 154.94 88.9) (xy 154.94 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "70de9276-82c0-4fe2-b257-864c631730fe")
+	)
+	(wire
+		(pts
+			(xy 142.24 189.23) (xy 142.24 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "74e9e7ca-a9e2-40df-8659-1e7587659a3a")
+	)
+	(wire
+		(pts
+			(xy 73.66 184.15) (xy 137.16 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "79bae291-b474-4843-b7d7-a0d6e1f7c8d6")
+	)
+	(wire
+		(pts
+			(xy 154.94 88.9) (xy 173.99 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b9d8f8f-aa9f-401e-8255-de331eaabc70")
+	)
+	(wire
+		(pts
+			(xy 139.7 186.69) (xy 139.7 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "83d8ff38-445f-421c-aeca-5ab1ecd6298a")
+	)
+	(wire
+		(pts
+			(xy 25.4 87.63) (xy 29.21 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a3bc265-c2e2-4302-b0f8-73da584d115d")
+	)
+	(wire
+		(pts
+			(xy 166.37 97.79) (xy 162.56 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e82ad2a0-8fc4-42d7-a506-8027aa0ee113")
+	)
+	(wire
+		(pts
+			(xy 25.4 186.69) (xy 139.7 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f18424f5-e412-47c4-b3dd-82d2c541d88d")
+	)
+	(wire
+		(pts
+			(xy 137.16 107.95) (xy 154.94 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb0c6de3-5566-4560-b738-c71050168bf9")
+	)
+	(wire
+		(pts
+			(xy 154.94 107.95) (xy 173.99 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fb3d2c3f-2f20-49af-8bfe-a682057cb860")
 	)
 	(symbol
 		(lib_id "EQLightBarLibrary:DEV-16771")
-		(at 92.71 87.63 0)
+		(at 49.53 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2191,7 +2739,7 @@
 		(fields_autoplaced yes)
 		(uuid "195ac6c4-7b2d-49d7-ae71-e7b0adf3697e")
 		(property "Reference" "U1"
-			(at 92.71 31.75 0)
+			(at 49.53 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2199,7 +2747,7 @@
 			)
 		)
 		(property "Value" "TEENSY 4.1"
-			(at 92.71 34.29 0)
+			(at 49.53 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2207,7 +2755,7 @@
 			)
 		)
 		(property "Footprint" "EQLightBarLibrary:MODULE_DEV-16771"
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2217,7 +2765,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2226,7 +2774,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2235,7 +2783,7 @@
 			)
 		)
 		(property "PARTREV" "4.1"
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2245,7 +2793,7 @@
 			)
 		)
 		(property "MANUFACTURER" "SparkFun Electronics"
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2255,7 +2803,7 @@
 			)
 		)
 		(property "MAXIMUM_PACKAGE_HEIGHT" "4.07mm"
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2265,7 +2813,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer recommendations"
-			(at 92.71 87.63 0)
+			(at 49.53 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2479,8 +3027,176 @@
 		)
 	)
 	(symbol
+		(lib_id "LED:APA102")
+		(at 154.94 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "4145eeb4-05d8-49fd-b275-932be986ef67")
+		(property "Reference" "D8"
+			(at 157.0833 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APA102"
+			(at 157.0833 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
+			(at 156.21 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf"
+			(at 157.48 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 154.94 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "80f5c8ea-74d0-45d6-8068-43ccae8bf9d7")
+		)
+		(pin "1"
+			(uuid "22eb16f9-6235-45b7-81e3-842639108532")
+		)
+		(pin "6"
+			(uuid "f57c62d5-a67e-4e1f-be08-f55d16767cb5")
+		)
+		(pin "5"
+			(uuid "04c79172-d98f-43ff-b5f4-146aeb06b0e5")
+		)
+		(pin "4"
+			(uuid "68320bea-172e-49b7-8043-bb88651e34f6")
+		)
+		(pin "3"
+			(uuid "b9cb3642-fa0f-4b2e-8292-430cc3dfb88e")
+		)
+		(instances
+			(project "PracticumEQLightBar"
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "LED:APA102")
+		(at 173.99 100.33 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "88bd58a1-fd1f-4c7b-bf57-0eaf58274ef9")
+		(property "Reference" "D9"
+			(at 176.1333 90.17 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "APA102"
+			(at 176.1333 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_RGB_5050-6"
+			(at 175.26 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.led-color.com/upload/201506/APA102%20LED.pdf"
+			(at 176.53 109.855 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "RGB LED with integrated controller"
+			(at 173.99 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "c1170461-02f9-46ec-a7e8-0fbe7f72ca77")
+		)
+		(pin "1"
+			(uuid "a849f90d-6487-4797-8e4a-68faa599bc42")
+		)
+		(pin "6"
+			(uuid "a0861715-6a80-468e-a88b-80e5ea19cae5")
+		)
+		(pin "5"
+			(uuid "16c55234-1cc9-416f-bd78-5bd75b51dea4")
+		)
+		(pin "4"
+			(uuid "27fca345-e00a-4ea1-a27a-3bd38b601589")
+		)
+		(pin "3"
+			(uuid "49750ad0-869b-475b-8aa5-f9b07fbddb91")
+		)
+		(instances
+			(project "PracticumEQLightBar"
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "EQLightBarLibrary:DEV-15845")
-		(at 153.67 93.98 0)
+		(at 97.79 109.22 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -2489,7 +3205,7 @@
 		(fields_autoplaced yes)
 		(uuid "a2930335-d8c9-47d3-b6aa-c8172d3e4c3e")
 		(property "Reference" "U2"
-			(at 153.67 48.26 0)
+			(at 97.79 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2497,7 +3213,7 @@
 			)
 		)
 		(property "Value" "TEENSY AUDIO ADAPTER BOARD REV D"
-			(at 153.67 50.8 0)
+			(at 97.79 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2505,7 +3221,7 @@
 			)
 		)
 		(property "Footprint" "EQLightBarLibrary:MODULE_DEV-15845"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2515,7 +3231,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2524,7 +3240,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2533,7 +3249,7 @@
 			)
 		)
 		(property "DigiKey_Part_Number" ""
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2543,7 +3259,7 @@
 			)
 		)
 		(property "SnapEDA_Link" "https://www.snapeda.com/parts/DEV-15845/SparkFun/view-part/?ref=snap"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2553,7 +3269,7 @@
 			)
 		)
 		(property "Description_1" "SGTL5000 Audio Interface Audio Teensy Platform Evaluation Expansion Board"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2563,7 +3279,7 @@
 			)
 		)
 		(property "Package" "None"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2573,7 +3289,7 @@
 			)
 		)
 		(property "Check_prices" "https://www.snapeda.com/parts/DEV-15845/SparkFun/view-part/?ref=eda"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2583,7 +3299,7 @@
 			)
 		)
 		(property "STANDARD" "Manufacturer recommendations"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2593,7 +3309,7 @@
 			)
 		)
 		(property "MF" "SparkFun Electronics"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2603,7 +3319,7 @@
 			)
 		)
 		(property "MP" "DEV-15845"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2613,7 +3329,7 @@
 			)
 		)
 		(property "MANUFACTURER" "SparkFun"
-			(at 153.67 93.98 0)
+			(at 97.79 109.22 0)
 			(effects
 				(font
 					(size 1.27 1.27)

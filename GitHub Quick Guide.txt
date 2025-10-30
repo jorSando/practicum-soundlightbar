@@ -110,6 +110,8 @@ iv. Open the Git Bash program and enter the following commands:
 		B) Switch to an already existing branch and work on it
 		
 			git checkout {alreadyExistingBranchName}
+
+	When you checkout, double check to make sure your local repo is up to date with the remote repo. (Unless you are knowingly avoiding any updates to the remote repo.)
 			
 	Important: Note that a new folder for the new branch has not been created. When you switch to a different branch, the 'practicum-soundlightbar' folder will update to contain whatever files are in that branch. (kinda ass if you ask me)
 	Note: You can check existing local and remote branches by typing: git branch -a

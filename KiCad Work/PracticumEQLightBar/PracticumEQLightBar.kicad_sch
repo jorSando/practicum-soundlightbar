@@ -8958,7 +8958,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "470u"
+		(property "Value" "680u"
 			(at 68.58 189.3569 0)
 			(effects
 				(font
@@ -12820,7 +12820,7 @@
 				)
 			)
 		)
-		(property "Footprint" "EQLightBarLibrary:PJ047BH DC Jack"
+		(property "Footprint" "EQLightBarLibrary:694106301002_1"
 			(at 224.79 28.956 0)
 			(effects
 				(font

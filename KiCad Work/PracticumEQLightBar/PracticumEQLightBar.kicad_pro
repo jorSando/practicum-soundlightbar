@@ -58,7 +58,28 @@
           "width": 0.0
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "lib_footprint_issues|55245000|108424999|f2d7ca57-5a58-4716-8f3e-d0c143037d9d|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|41275000|92075000|0d936fc8-4e5b-4c10-bbab-83bea8fd3029|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|43180000|123825000|5626ef2c-746c-4245-8894-dfb67cddcbe7|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|49530000|120547650|0931ad4c-7afb-46b9-b1c6-c7bd28b9c7e5|00000000-0000-0000-0000-000000000000",
+          ""
+        ],
+        [
+          "lib_footprint_mismatch|67294889|91416747|1dac6b01-f2fb-4d2e-80bc-2b264702d197|00000000-0000-0000-0000-000000000000",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -189,7 +210,7 @@
       "track_widths": [
         0.0,
         0.4,
-        2.0
+        1.4
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -221,6 +242,10 @@
         {
           "diameter": 0.0,
           "drill": 0.0
+        },
+        {
+          "diameter": 0.8,
+          "drill": 0.4
         }
       ],
       "zones_allow_external_fillets": false
@@ -241,7 +266,36 @@
     "equivalence_files": []
   },
   "erc": {
-    "erc_exclusions": [],
+    "erc_exclusions": [
+      [
+        "footprint_link_issues|203200|2070100|e13df64e-fa7f-441b-abe1-91ddd1667d45|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_issues|203200|2070100|e13df64e-fa7f-441b-abe1-91ddd1667d45|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|1346200|774700|a2930335-d8c9-47d3-b6aa-c8172d3e4c3e|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "lib_symbol_mismatch|2057400|876300|195ac6c4-7b2d-49d7-ae71-e7b0adf3697e|00000000-0000-0000-0000-000000000000|||",
+        ""
+      ],
+      [
+        "power_pin_not_driven|-25400|2070100|2df6c2d4-b33e-4597-b597-f29cc0da467a|00000000-0000-0000-0000-000000000000|/bcd3afc7-5a13-426d-ae3b-fcf06c733e65|/bcd3afc7-5a13-426d-ae3b-fcf06c733e65|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|1854200|1104900|db7baa3e-8124-4886-904f-10516604cf3f|00000000-0000-0000-0000-000000000000|/bcd3afc7-5a13-426d-ae3b-fcf06c733e65|/bcd3afc7-5a13-426d-ae3b-fcf06c733e65|",
+        ""
+      ],
+      [
+        "power_pin_not_driven|533400|635000|eec197b5-c176-4dca-96e5-e94b5e948f5c|00000000-0000-0000-0000-000000000000|/bcd3afc7-5a13-426d-ae3b-fcf06c733e65|/bcd3afc7-5a13-426d-ae3b-fcf06c733e65|",
+        ""
+      ]
+    ],
     "meta": {
       "version": 0
     },

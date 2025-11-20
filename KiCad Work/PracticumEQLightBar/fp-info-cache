@@ -1,4 +1,4 @@
-47378020970932415
+47379784711986732
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59769,6 +59769,13 @@ EQLightBarLibrary
 PJ047BH DC Jack
 PJ-047BH-1
 Connector
+0
+5
+5
+EQLightBarLibrary
+PTV09A4030FA104 Pot 100k
+PTV09A-4030F-A104-2
+Variable Resistor
 0
 5
 5

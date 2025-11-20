@@ -233,6 +233,113 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "test point"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "TestPoint_1_1"
+				(pin passive line
+					(at 0 0 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Audio:AudioJack3"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -686,157 +793,6 @@
 						)
 					)
 					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Microphone"
-			(pin_names
-				(offset 0.0254)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "MK"
-				(at -3.81 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "Microphone"
-				(at -3.81 -0.635 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 2.54 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Microphone"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "microphone"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Microphone_0_1"
-				(polyline
-					(pts
-						(xy -2.54 2.54) (xy -2.54 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 0 0)
-					(radius 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.254 3.81) (xy 0.762 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0.508 4.064) (xy 0.508 3.556)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Microphone_1_1"
-				(pin passive line
-					(at 0 5.08 270)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -5.08 90)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -4330,6 +4286,12 @@
 		(uuid "4c90d7c2-9a06-400f-b884-43b7f3a62de2")
 	)
 	(junction
+		(at 237.49 39.37)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ffd3510-fd1a-4165-9568-b0bb3050d41f")
+	)
+	(junction
 		(at 107.95 190.5)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4594,6 +4556,18 @@
 		(uuid "ac0909e4-bf9f-4a77-b525-6bc0c7d2435f")
 	)
 	(junction
+		(at 214.63 105.41)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ae398324-df05-471f-bfaf-e43f0b733b70")
+	)
+	(junction
+		(at 214.63 102.87)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "afc13ab7-7ae1-41a7-90a4-a13b1f8ca9fb")
+	)
+	(junction
 		(at 247.65 209.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4628,6 +4602,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "ba711c2c-e3df-4d2a-bb60-2716f71396a8")
+	)
+	(junction
+		(at 243.84 25.4)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc4e4db8-ede1-4f85-92a5-89150910f2fa")
 	)
 	(junction
 		(at 165.1 190.5)
@@ -4688,6 +4668,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d2c9ca68-add3-43a9-9f49-fd104d891b3c")
+	)
+	(junction
+		(at 148.59 120.65)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d5735127-6cbe-4d9d-929a-f830a31ee2f1")
 	)
 	(junction
 		(at 520.7 167.64)
@@ -4788,14 +4774,6 @@
 		(uuid "079482e9-76d4-4afc-bbef-a87182ec8881")
 	)
 	(no_connect
-		(at 205.74 100.33)
-		(uuid "14c3af8e-e003-44bc-8a36-9a48205c7140")
-	)
-	(no_connect
-		(at 205.74 102.87)
-		(uuid "198b2579-6422-48d9-a90d-27f481b79156")
-	)
-	(no_connect
 		(at 205.74 135.89)
 		(uuid "1c0ba9a2-fdda-471b-ad19-49a125d1f0bc")
 	)
@@ -4806,6 +4784,10 @@
 	(no_connect
 		(at 205.74 64.77)
 		(uuid "24b9fbaa-ea91-4c37-be4c-faed0cc02077")
+	)
+	(no_connect
+		(at 116.84 97.79)
+		(uuid "26c54d24-618d-4152-b6bd-010a12035965")
 	)
 	(no_connect
 		(at 205.74 92.71)
@@ -4834,6 +4816,10 @@
 	(no_connect
 		(at 205.74 140.97)
 		(uuid "35fba78a-bf19-42c2-a357-5622828406fb")
+	)
+	(no_connect
+		(at 116.84 100.33)
+		(uuid "3828ca3e-7974-4085-874c-f531b3689a0c")
 	)
 	(no_connect
 		(at 205.74 82.55)
@@ -4918,10 +4904,6 @@
 	(no_connect
 		(at 165.1 148.59)
 		(uuid "a903e245-d866-4bcd-9b17-76d1d390b46d")
-	)
-	(no_connect
-		(at 205.74 105.41)
-		(uuid "b469423e-e1c4-4be1-b77b-3641d440a111")
 	)
 	(no_connect
 		(at 165.1 140.97)
@@ -5342,6 +5324,16 @@
 			(type default)
 		)
 		(uuid "166b30a4-5f2e-4ef9-9cb9-a0e2dafbe37a")
+	)
+	(wire
+		(pts
+			(xy 214.63 100.33) (xy 214.63 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1801e59a-16d8-4532-abe6-110872439f6a")
 	)
 	(wire
 		(pts
@@ -6095,6 +6087,16 @@
 	)
 	(wire
 		(pts
+			(xy 214.63 102.87) (xy 214.63 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d5c24af-a4ce-48b8-be54-1f386752fb36")
+	)
+	(wire
+		(pts
 			(xy 420.37 201.93) (xy 421.64 201.93)
 		)
 		(stroke
@@ -6102,6 +6104,16 @@
 			(type default)
 		)
 		(uuid "4d9d75ee-3ad2-47ee-8e22-2b5a0f4c150c")
+	)
+	(wire
+		(pts
+			(xy 148.59 120.65) (xy 148.59 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4dd8e447-27c7-4b65-a6ff-3ab3503c362a")
 	)
 	(wire
 		(pts
@@ -6285,16 +6297,6 @@
 	)
 	(wire
 		(pts
-			(xy 116.84 97.79) (xy 116.84 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5ec8a1ac-134b-4adc-8843-a512c7027b2d")
-	)
-	(wire
-		(pts
 			(xy 152.4 105.41) (xy 165.1 105.41)
 		)
 		(stroke
@@ -6435,16 +6437,6 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 100.33) (xy 116.84 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bdfeb3b-d421-4fe5-ac7f-b93c8f564533")
-	)
-	(wire
-		(pts
 			(xy 152.4 69.85) (xy 165.1 69.85)
 		)
 		(stroke
@@ -6575,6 +6567,16 @@
 	)
 	(wire
 		(pts
+			(xy 205.74 105.41) (xy 214.63 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7817a792-7ab1-44ff-96c5-7d561069b8d6")
+	)
+	(wire
+		(pts
 			(xy 214.63 190.5) (xy 214.63 194.31)
 		)
 		(stroke
@@ -6615,6 +6617,16 @@
 	)
 	(wire
 		(pts
+			(xy 233.68 39.37) (xy 237.49 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ac3aaed-6d0c-4f46-ae41-9c364f2d2467")
+	)
+	(wire
+		(pts
 			(xy 99.06 179.07) (xy 100.33 179.07)
 		)
 		(stroke
@@ -6642,6 +6654,16 @@
 			(type default)
 		)
 		(uuid "7cafc4b7-5633-40b8-9c0e-4d4a2edc0fec")
+	)
+	(wire
+		(pts
+			(xy 205.74 100.33) (xy 214.63 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d5d74ee-5cd6-4b26-95b3-5ac69ade9698")
 	)
 	(wire
 		(pts
@@ -6775,7 +6797,7 @@
 	)
 	(wire
 		(pts
-			(xy 237.49 30.48) (xy 237.49 34.29)
+			(xy 237.49 30.48) (xy 237.49 39.37)
 		)
 		(stroke
 			(width 0)
@@ -6832,16 +6854,6 @@
 			(type default)
 		)
 		(uuid "8bc3ac86-6853-490d-afd9-216d82e15d43")
-	)
-	(wire
-		(pts
-			(xy 116.84 90.17) (xy 109.22 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8c355799-42b0-4ee2-aea1-adf1583a2f9b")
 	)
 	(wire
 		(pts
@@ -6932,6 +6944,16 @@
 			(type default)
 		)
 		(uuid "919e60b1-4511-44ce-bcee-6f9bb4003f21")
+	)
+	(wire
+		(pts
+			(xy 214.63 102.87) (xy 205.74 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92182e35-a13e-490c-aa24-759c50620e3c")
 	)
 	(wire
 		(pts
@@ -7965,6 +7987,16 @@
 	)
 	(wire
 		(pts
+			(xy 237.49 39.37) (xy 237.49 45.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d82e2cdf-1c7f-47f8-b428-4afaf11df979")
+	)
+	(wire
+		(pts
 			(xy 152.4 67.31) (xy 165.1 67.31)
 		)
 		(stroke
@@ -8012,6 +8044,16 @@
 			(type default)
 		)
 		(uuid "dd0bd1ad-bb56-4f1b-8d7b-f787c8b71ace")
+	)
+	(wire
+		(pts
+			(xy 214.63 105.41) (xy 214.63 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dd3ce0aa-d5b8-446f-91bb-3774debd072e")
 	)
 	(wire
 		(pts
@@ -8112,6 +8154,16 @@
 			(type default)
 		)
 		(uuid "e3dadbbc-d90d-4f62-8909-564e1154d1ec")
+	)
+	(wire
+		(pts
+			(xy 148.59 120.65) (xy 153.67 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e4466522-2f85-4d4e-ade8-536095f4a832")
 	)
 	(wire
 		(pts
@@ -8405,7 +8457,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 120.65) (xy 153.67 120.65)
+			(xy 144.78 120.65) (xy 148.59 120.65)
 		)
 		(stroke
 			(width 0)
@@ -9613,6 +9665,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 71.12 184.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "1fc14fdf-1f6a-466e-8f34-6b77b2c01499")
+		(property "Reference" "TP2"
+			(at 68.58 182.1181 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 68.58 179.5781 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 76.2 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 71.12 184.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7c85bef7-66b5-4be5-a1e7-f55daa2ce300")
+		)
+		(instances
+			(project "PracticumEQLightBar"
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:APA102")
 		(at 297.18 201.93 0)
 		(unit 1)
@@ -10353,7 +10471,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 237.49 34.29 0)
+		(at 237.49 45.72 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -10362,7 +10480,7 @@
 		(fields_autoplaced yes)
 		(uuid "45528f63-238d-4c88-bf62-87bcea77fbb9")
 		(property "Reference" "#PWR06"
-			(at 237.49 40.64 0)
+			(at 237.49 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10371,7 +10489,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 237.49 39.37 0)
+			(at 237.49 50.8 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10379,7 +10497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 237.49 34.29 0)
+			(at 237.49 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10388,7 +10506,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 237.49 34.29 0)
+			(at 237.49 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10397,7 +10515,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 237.49 34.29 0)
+			(at 237.49 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -10751,6 +10869,72 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 243.84 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4b9b07ab-7d50-473c-a13e-8120e390cba3")
+		(property "Reference" "TP3"
+			(at 241.3 23.3681 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 241.3 20.8281 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 248.92 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 248.92 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 243.84 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4014c9c3-fa77-4934-be97-bffedb4e1208")
+		)
+		(instances
+			(project "PracticumEQLightBar"
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "TP3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "LED:APA102")
 		(at 429.26 201.93 0)
 		(unit 1)
@@ -10978,75 +11162,6 @@
 			(project "PracticumEQLightBar"
 				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
 					(reference "D47")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Microphone")
-		(at 109.22 95.25 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6aefd320-1bca-440c-b658-932b93f4531a")
-		(property "Reference" "MK1"
-			(at 101.6 93.726 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "Microphone"
-			(at 94.742 96.012 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" ""
-			(at 109.22 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 109.22 92.71 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Microphone"
-			(at 109.22 95.25 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c8bbcbfe-4783-4aea-a662-e15fdcf3cc1f")
-		)
-		(pin "1"
-			(uuid "7dcd2a26-a8e8-433e-a40f-7ead2aedf94f")
-		)
-		(instances
-			(project ""
-				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
-					(reference "MK1")
 					(unit 1)
 				)
 			)
@@ -11698,6 +11813,139 @@
 			(project "PracticumEQLightBar"
 				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
 					(reference "D34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 148.59 123.19 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "833361c6-6aa6-4b6b-9c47-88652c5e5d11")
+		(property "Reference" "TP1"
+			(at 146.05 125.2219 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 146.05 127.7619 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 148.59 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "386ae7d4-507c-4744-a0b2-08528037187f")
+		)
+		(instances
+			(project ""
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "TP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 233.68 39.37 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "8a1a2ebf-b284-46db-bcc5-fa49f46cfcf0")
+		(property "Reference" "TP4"
+			(at 231.14 37.3381 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 231.14 34.7981 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_Pad_1.0x1.0mm"
+			(at 238.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 238.76 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 233.68 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "15ccba32-ee44-41dd-8a74-4452489ab59a")
+		)
+		(instances
+			(project "PracticumEQLightBar"
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -13967,6 +14215,72 @@
 			(project ""
 				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
 					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 214.63 107.95 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ea21cbd4-219d-42dd-96f9-46151a0a39ec")
+		(property "Reference" "#PWR09"
+			(at 214.63 114.3 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 214.63 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 214.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 214.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 214.63 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e9a08ee5-4f67-4749-b8dd-23c562703314")
+		)
+		(instances
+			(project "PracticumEQLightBar"
+				(path "/bcd3afc7-5a13-426d-ae3b-fcf06c733e65"
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)

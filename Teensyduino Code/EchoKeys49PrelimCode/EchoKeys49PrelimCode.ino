@@ -3,6 +3,15 @@
 #include <SPI.h>
 #include <SD.h>
 #include <SerialFlash.h>
+#include <FastLED.h>
+#include <math.h>
+
+// DotStar LED / FastLED setup
+#define NUM_LEDS          49
+#define DOTSTAR_DATA_PIN  2   // Teensy pin to DotStar DI
+#define DOTSTAR_CLOCK_PIN 3   // Teensy pin to DotStar CI
+
+CRGB leds[NUM_LEDS];
 
 AudioInputI2S            i2s1;           //xy=463,392
 AudioOutputI2S           i2s2;           //xy=689,395
@@ -30,8 +39,9 @@ const int NOTE_WINDOW = 2;      // smaller window -> less lag
 static int noteBuf[NOTE_WINDOW];
 static int noteCount = 0;
 static int notePos   = 0;
-const float NOISE_THRESHOLD = 0.005f;  // tweak this value (0–1 range)
-                                      //(0.01f is a float, using 0.01 would require the board to convert from double to float)
+
+const float NOISE_THRESHOLD = 0.005f;  // currently unused
+
 void resetNoteFilter() {
   noteCount = 0;
   notePos   = 0;
@@ -51,7 +61,6 @@ int findClosestNote(float freq) { //Function to find the nearest piano key
   return bestIndex;
 }
 
-//>>NEW
 // Simple median filter on the note index to avoid octave flicker
 int smoothNoteIndex(int rawIndex) {
   // Add new index into circular buffer
@@ -105,6 +114,22 @@ int applyOctaveLock(int candidateIndex) {
   return candidateIndex;
 }
 
+// ----- NEW: Lights the LED depending on the index.  -----
+// NOTE: this MUST be OUTSIDE of applyOctaveLock (global-scope function)
+void showNoteOnStrip(int noteIndex) {
+  if (noteIndex < 0 || noteIndex >= NUM_LEDS) return;
+
+  // Turn all LEDs off
+  for (int i = 0; i < NUM_LEDS; i++) {
+    leds[i] = CRGB::Black;
+  }
+
+  // Light this note – pick any color you like
+  leds[noteIndex] = CRGB::Blue;
+
+  FastLED.show();
+}
+
 void setup() {
   Serial.begin(115200);
 
@@ -114,6 +139,11 @@ void setup() {
 
   Serial.println("Setup starting...");
 
+  // ---- DotStar / FastLED init ----
+  FastLED.addLeds<DOTSTAR, DOTSTAR_DATA_PIN, DOTSTAR_CLOCK_PIN, BGR>(leds, NUM_LEDS);
+  FastLED.clear();
+  FastLED.show();
+
   AudioMemory(40);
 
   audioShield.enable();
@@ -121,7 +151,7 @@ void setup() {
   audioShield.volume(0.7);
   audioShield.lineInLevel(13);  // boost line-in a bit (0–15)
 
-  // Initialize YIN algorithm. 0.15 is a good default threshold.
+  // Initialize YIN algorithm
   notefreq1.begin(0.20f);  // lower = more sensitive, higher = more conservative
 
   Serial.println("Setup finished.");
@@ -130,6 +160,8 @@ void setup() {
 void loop() {
   // Blink so we know loop() is alive
   static uint32_t lastBlink = 0;
+  static uint32_t lastGoodMs = 0;   // << single shared "last good" timestamp
+
   if (millis() - lastBlink > 1000) {
     digitalWrite(13, !digitalRead(13));
     lastBlink = millis();
@@ -142,21 +174,20 @@ void loop() {
   float freq = notefreq1.read();        // Hz
   float prob = notefreq1.probability(); // 0–1
 
-  // Treat low-probability as "no note"
+  // Treat low-probability or out-of-range as "no note"
   const float MIN_PROB = 0.90f;
   if (prob < MIN_PROB ||
       freq < piano49Freq[0] ||
       freq > piano49Freq[48]) {
 
     // If we've gone a bit of time with no valid note, clear filter history
-    static uint32_t lastGoodMs = 0;
     if (millis() - lastGoodMs > 150) {  // ~150 ms of "no note"
       resetNoteFilter();
     }
     return;
   }
 
-  static uint32_t lastGoodMs = 0;
+  // Valid note frame
   lastGoodMs = millis();
 
   int rawIndex = findClosestNote(freq);       // based on current frame only
@@ -174,6 +205,6 @@ void loop() {
   Serial.print(" Hz) | prob=");
   Serial.println(prob, 2);
 
-  // Use 'index' for LEDs / key mapping
+  // ---- Drive the DotStar strip with the final index ----
+  showNoteOnStrip(index);
 }
-

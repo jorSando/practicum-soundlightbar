@@ -1,4 +1,4 @@
-47376257424235330
+47383312028157834
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -59738,6 +59738,20 @@ One digit LED 7 segment SA39-11 SC39-11 SA39-12 SC39-12
 10
 10
 EQLightBarLibrary
+694106301002_1
+694106301002
+Connector
+0
+3
+3
+EQLightBarLibrary
+Big Chungus
+
+
+0
+0
+0
+EQLightBarLibrary
 Double PinSocket_1x24_P2.54mm_Vertical (Teensy 4_1)
 Through hole straight socket strip, 1x24, 2.54mm pitch, single row (from Kicad 4.0.7), script generated
 Through hole socket strip THT 1x24 2.54mm single row
@@ -59765,6 +59779,20 @@ Connector
 0
 5
 5
+EQLightBarLibrary
+PTV09A4030FA104 Pot 100k
+PTV09A-4030F-A104-2
+Variable Resistor
+0
+5
+5
+EQLightBarLibrary
+Untitled
+
+
+0
+0
+0
 Ferrite_THT
 LairdTech_28C0236-0JW-10
 Ferrite, vertical, LairdTech 28C0236-0JW-10, https://assets.lairdtech.com/home/brandworld/files/28C0236-0JW-10.pdf, JW Miller core https://www.bourns.com/products/magnetic-products/j.w.-miller-through-hole-ferrite-beads-emi-filters
